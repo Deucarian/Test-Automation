@@ -1,0 +1,11 @@
+{
+  "name": "com.deucarian.test-automation",
+  "version": "0.1.0",
+  "displayName": "Deucarian Test Automation",
+  "description": "Editor-only Unity batch test runner helpers for durable EditMode and PlayMode validation results.",
+  "unity": "6000.3",
+  "author": {
+    "name": "Deucarian"
+  },
+  "license": "MIT"
+}
