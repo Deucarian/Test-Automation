@@ -1,0 +1,16 @@
+{
+  "packageId": "com.deucarian.test-automation",
+  "displayName": "Deucarian Test Automation",
+  "ownedCapabilities": [],
+  "runtimeAssemblies": [],
+  "editorAssemblies": [],
+  "sampleAssemblies": [],
+  "testAssemblies": [
+    "Deucarian.TestAutomation.Editor"
+  ],
+  "requiredDependencies": [],
+  "optionalVersionDefinedDependencies": [],
+  "allowedDirectDebugCalls": [],
+  "allowedDirectUnityObjectLifetimeCalls": [],
+  "expectedSamplesRoot": ""
+}
