@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.1 - 2026-07-17
+
+- Aligned package governance and automated-test metadata with the coordinated portfolio release.
+
 ## 0.1.0
 
 - Added editor-only batch test runner entry points for EditMode, PlayMode, and combined runs.
