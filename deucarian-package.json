@@ -1,6 +1,7 @@
 {
   "packageId": "com.deucarian.test-automation",
   "displayName": "Deucarian Test Automation",
+  "samplePolicy": "tool",
   "ownedCapabilities": [],
   "runtimeAssemblies": [],
   "editorAssemblies": [],
