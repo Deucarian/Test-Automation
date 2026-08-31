@@ -7,9 +7,12 @@
   "editorAssemblies": [],
   "sampleAssemblies": [],
   "testAssemblies": [
-    "Deucarian.TestAutomation.Editor"
+    "Deucarian.TestAutomation.Editor",
+    "Deucarian.TestAutomation.Tests"
   ],
-  "requiredDependencies": [],
+  "requiredDependencies": [
+    "com.deucarian.editor"
+  ],
   "optionalVersionDefinedDependencies": [],
   "allowedDirectDebugCalls": [],
   "allowedDirectUnityObjectLifetimeCalls": [],

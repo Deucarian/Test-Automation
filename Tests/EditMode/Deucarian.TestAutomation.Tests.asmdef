@@ -1,7 +1,8 @@
 {
-  "name": "Deucarian.TestAutomation.Editor",
-  "rootNamespace": "Deucarian.TestAutomation",
+  "name": "Deucarian.TestAutomation.Tests",
+  "rootNamespace": "Deucarian.TestAutomation.Tests",
   "references": [
+    "Deucarian.TestAutomation.Editor",
     "Deucarian.Editor"
   ],
   "includePlatforms": [
@@ -11,8 +12,10 @@
   "allowUnsafeCode": false,
   "overrideReferences": false,
   "precompiledReferences": [],
-  "autoReferenced": true,
-  "defineConstraints": [],
+  "autoReferenced": false,
+  "defineConstraints": [
+    "UNITY_INCLUDE_TESTS"
+  ],
   "versionDefines": [],
   "optionalUnityReferences": [
     "TestAssemblies"

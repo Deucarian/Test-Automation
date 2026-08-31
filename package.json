@@ -12,5 +12,7 @@
     "url": "https://github.com/Deucarian/Test-Automation.git"
   },
   "license": "MIT",
-  "dependencies": {}
+  "dependencies": {
+    "com.deucarian.editor": "1.2.0"
+  }
 }
