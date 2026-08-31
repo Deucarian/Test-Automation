@@ -50,7 +50,7 @@ Do not use this package to take ownership of capabilities outside its `AGENTS.md
 
 ## Integrations
 
-This package has no direct Deucarian package dependencies.
+The editor assembly depends on `com.deucarian.editor` and contributes a Developer card and stable tool entry to Deucarian Control Center. Batch entry points remain public and unchanged.
 
 Install optional companion packages only when their owned capability is needed by production code, samples, or tests.
 

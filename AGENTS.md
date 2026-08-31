@@ -22,12 +22,12 @@ This package must not own:
 
 Allowed dependency shape:
 
-- Dependency-free editor tooling package.
+- Editor-only tooling package that may depend on `com.deucarian.editor` for its Control Center contribution.
 - May reference Unity Test Framework assemblies through Unity's `TestAssemblies` optional reference to drive editor test execution.
 
 Required dependencies and why:
 
-- None.
+- `com.deucarian.editor`: shared Control Center contracts and presentation for the Developer contribution.
 
 Optional/version-defined dependencies:
 
