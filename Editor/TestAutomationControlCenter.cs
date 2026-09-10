@@ -28,7 +28,7 @@ namespace Deucarian.TestAutomation
                 ShowBatchCommands,
                 PackageId,
                 searchTerms: new[] { "tests", "batch", "editmode", "playmode" },
-                order: 300));
+                order: 300, createPage: () => DeucarianEditorActionPage.Create(ToolId, Commands)));
             DeucarianControlCenterRegistry.RegisterCardProvider(new Provider());
         }
 
@@ -62,7 +62,7 @@ namespace Deucarian.TestAutomation
                         new DeucarianControlCenterAction(
                             "show-commands",
                             "Show Batch Commands",
-                            ShowBatchCommands)
+                            ShowBatchCommands, navigationToolId: ToolId)
                     },
                     searchTerms: new[] { "tests", "batch", "runner" });
             }
