@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.1.2] - 2026-09-09
+
+- Register package tooling and navigation actions as shared Control Center pages. Preserve the domain workflow while using Editor-owned submenus, in-window navigation, and UI scaling.
+
 ## Unreleased
 
 - Added an explicit Deucarian Control Center Developer contribution for the durable batch runner commands.
