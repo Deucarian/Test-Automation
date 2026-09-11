@@ -9,14 +9,6 @@ namespace Deucarian.TestAutomation
     {
         private const string PackageId = "com.deucarian.test-automation";
         private const string ToolId = "deucarian.test-automation";
-        private const string Commands =
-            "Run EditMode:\n" +
-            "-executeMethod Deucarian.TestAutomation.BatchTestRunner.RunEditMode\n\n" +
-            "Run PlayMode:\n" +
-            "-executeMethod Deucarian.TestAutomation.BatchTestRunner.RunPlayMode\n\n" +
-            "Run both:\n" +
-            "-executeMethod Deucarian.TestAutomation.BatchTestRunner.RunAll\n\n" +
-            "Add -batchTestResults <path> and optional -batchTestFilter <name>.";
 
         static TestAutomationControlCenter()
         {
@@ -27,14 +19,15 @@ namespace Deucarian.TestAutomation
                 DeucarianControlCenterArea.Developer,
                 ShowBatchCommands,
                 PackageId,
-                searchTerms: new[] { "tests", "batch", "editmode", "playmode" },
-                order: 300, createPage: () => DeucarianEditorActionPage.Create(ToolId, Commands)));
+                iconKey: DeucarianEditorIconIds.Play, searchTerms: new[] { "tests", "batch", "editmode", "playmode" },
+                order: 300, createPage: TestAutomationWorkspace.CreatePage));
             DeucarianControlCenterRegistry.RegisterCardProvider(new Provider());
         }
 
         private static void ShowBatchCommands()
         {
-            EditorUtility.DisplayDialog("Deucarian Test Automation", Commands, "OK");
+            DeucarianEditorWindowPages.ShowStandalone<TestAutomationWorkspace>("Test automation",
+                new UnityEngine.Vector2(560, 480));
         }
 
         private sealed class Provider : IDeucarianControlCenterCardProvider
